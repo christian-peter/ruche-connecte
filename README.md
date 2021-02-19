@@ -24,16 +24,20 @@ C'est la cas notamment pour l'alimentation des différents modules. La tension d
 
 ![alimentation](/Images/alim.png)
 
-Une carte batterie spécifique peut être connectée via les connecteurs JP2 et JP3, elle comporte une batterie LiFePO<sub>4</sub> connectée entre la masse et le signal '3.3_BAT'.
+Une carte batterie spécifique peut être connectée via les connecteurs JP2 et JP3, elle peut être équipée d'une batterie LiFePO<sub>4</sub> connectée entre la masse et le signal '3.3_BAT'.
 
 En l'absence d'alimentation sur l'entrée '+12V', le transistor Q4 est passant alimentant ainsi les éléments connectés à 'Vcc' à partir de la batterie LiFePO<sub>4</sub>. 
 
-Si la carte est alimentée par l'entrée '+12V', les éléments connectés à 'Vcc' sont alimentés par le régulateur MIC5239. Le transistor Q4 est bloqué car le régulateur ne doit pas charger la batterie. L'entrée '+12V' peut recevoir des tensions comprises entre 3.6V et 30V. Les cartes sont généralement prévues pour recevoir un régulateur en boîtier :
+Si la carte est alimentée par l'entrée '+12V', les éléments connectés à 'Vcc' sont alimentés par le régulateur MIC5239. Le transistor Q4 est bloqué car le régulateur ne doit pas charger la batterie. L'entrée '+12V' peut recevoir des tensions comprises entre 3.6V et 30V. 
+<!-- Les cartes sont généralement prévues pour recevoir un régulateur en boîtier :
 
-* soit SOT-223 
-* soit MSOP.
+* soit SOT-223,
+* soit MSOP.-->
 
-Dans le but d'économiser l'énergie les périphériques ne sont alimentés par 'V+' que lorsque le transistor Q1 est passant.
+Dans le but d'économiser l'énergie, les périphériques ne sont alimentés par 'V+' que lorsque le transistor Q1 est passant (cad lorsque la sortie 'MEASURE' de l'ESP32 est au niveau haut).
 
 
-# La balance
+# La réalisation 
+
+* la balance
+
