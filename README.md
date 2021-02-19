@@ -28,7 +28,10 @@ Une carte batterie spécifique peut être connectée via les connecteurs JP2 et 
 
 En l'absence d'alimentation sur l'entrée '+12V', le transistor Q4 est passant alimentant ainsi les éléments connectés à 'Vcc' à partir de la batterie LiFePO<sub>4</sub>. 
 
-Si la carte est alimentée par l'entrée '+12V', les éléments connectés à 'Vcc' sont alimentés par le régulateur MIC5239. Le transistor Q4 est bloqué car le régulateur ne doit pas charger la batterie. L'entrée '+12V' peut recevoir des tensions comprises entre 3.6V et 30V. Les cartes sont généralement prévues pour recevoir un régulateur en boîtier soit SOT-223 soit MSOP.
+Si la carte est alimentée par l'entrée '+12V', les éléments connectés à 'Vcc' sont alimentés par le régulateur MIC5239. Le transistor Q4 est bloqué car le régulateur ne doit pas charger la batterie. L'entrée '+12V' peut recevoir des tensions comprises entre 3.6V et 30V. Les cartes sont généralement prévues pour recevoir un régulateur en boîtier :
+
+* soit SOT-223 
+* soit MSOP.
 
 Dans le but d'économiser l'énergie les périphériques ne sont alimentés par 'V+' que lorsque le transistor Q1 est passant.
 
