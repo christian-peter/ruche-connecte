@@ -40,4 +40,8 @@ Dans le but d'économiser l'énergie, les périphériques ne sont alimentés par
 # La réalisation 
 
 * la balance
+* le module interne
+* le module météorologique
+* la carte batterie
+* la passerelle (gateway)
 
