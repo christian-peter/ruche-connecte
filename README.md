@@ -39,7 +39,7 @@ Dans le but d'économiser l'énergie, les périphériques ne sont alimentés par
 
 # La réalisation 
 
-* [la balance](/Balance/README.md)
+* [la balance](/Balance/README.md#la-balance)
 * le module interne
 * le module météorologique
 * la carte batterie
