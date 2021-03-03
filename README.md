@@ -56,7 +56,7 @@ Les connexions minimales à établir sont :
 * ESP32 Tx <=> FTDI232 Rx (orange)
 * ESP32 Rx <=> FTDI232 Tx (jaune)
 
-Si le module n'est pas alimenté de façon autonome, il faut ajouter un fil d'alimentation (Vcc) et le cavalier doit être positionné coté 3.3V (voir la flèche), si le module dispose de sa propre alimentation il faut retirer le cavalier :
+Si le module n'est pas alimenté de façon autonome, il faut ajouter un fil d'alimentation (Vcc) et le cavalier doit être positionné coté 3.3V (voir la flèche), si le module dispose de sa propre alimentation il faut retirer le cavalier.
 
 * ESP32 Vcc <=> FTDI232 Vcc (rouge)
 
