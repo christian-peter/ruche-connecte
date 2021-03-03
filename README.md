@@ -18,9 +18,11 @@ Les données relevées par ces modules sont transmises via un réseau LoRa, dont
 
 L'électronique a été développée autour d'un microcontrôleur [ESP32](http://esp32.net/) d'Espressif Systems, basé sur l'architecture Xtensa LX6 de Tensilica, intégrant la gestion du Wi-Fi et du Bluetooth et d'un modem LoRa [RFM95](https://www.hoperf.com/modules/lora/RFM95.html).
 
-Elle a été conçue avec un soucis de polyvalence pour permettre différentes configurations mais aussi pour faciliter les évolutions ou optimisations futures.
+Elle a été conçue avec un soucis de polyvalence pour permettre différentes configurations mais aussi pour faciliter les évolutions ou optimisations futures. C'est la cas notamment pour l'alimentation des différents modules.
 
-C'est la cas notamment pour l'alimentation des différents modules. La tension d'alimentation des circuits précités est de 3.3V (maxi 3.6V). Il peuvent donc être alimentés directement par des batteries lithium-fer-phosphate (LiFePO<sub>4</sub>). Afin de pouvoir utiliser également d'autres sources d'énergie (batteries Lipo, Liion, plomb, .... ) les cartes sont équipées d'un régulateur de tension (MIC5239).
+## L'alimentation des modules
+
+La tension d'alimentation des circuits précités est de 3.3V (maxi 3.6V). Il peuvent donc être alimentés directement par des batteries lithium-fer-phosphate (LiFePO<sub>4</sub>). Afin de pouvoir utiliser également d'autres sources d'énergie (batteries Lipo, Liion, plomb, .... ) les cartes sont équipées d'un régulateur de tension (MIC5239).
 
 ![alimentation](/Images/alim.png)
 
@@ -35,6 +37,47 @@ Si la carte est alimentée par l'entrée '+12V', les éléments connectés à 'V
 * soit MSOP.-->
 
 Dans le but d'économiser l'énergie, les périphériques ne sont alimentés par 'V+' que lorsque le transistor Q1 est passant (cad lorsque la sortie 'MEASURE' de l'ESP32 est au niveau haut).
+
+## La programmation du microcontrôleur
+
+Le logiciel est développé sur l'interface arduino. L’installation et l'utilisation de cet outil est décrit
+[ici](https://www.arduino-france.com/tutoriels/ide-arduino-installation-et-utilisation/).
+
+Il faut le configurer pour pouvoir utiliser l'ESP32 : voir 
+[ce site](http://electroniqueamateur.blogspot.com/2019/07/programmer-lesp32-avec-lide-arduino.html)
+ou [celui-ci](http://emery.claude.free.fr/esp32-idearduino.html)
+
+Le téléversement nécessite un interface 
+[USB/FTDI232](https://www.google.com/search?q=ftdi232&tbm=isch&ved=2ahUKEwj_ld-KopTvAhUEgM4BHXQxAnQQ2-cCegQIABAA&oq=ftdi232&gs_lcp=CgNpbWcQAzIECCMQJzIECCMQJzICCAAyAggAMgQIABAeMgQIABAeMgQIABAeMgQIABAeMgQIABAeMgYIABAKEBhQ8tsCWPLbAmDG3QJoAHAAeACAAViIAViSAQExmAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=FZQ_YL-3KYSAur4P9OKIoAc&bih=596&biw=1417&client=ubuntu&hs=15p).
+
+Les connexions minimales à établir sont :
+
+* ESP32 gnd <=> FTDI232 gnd (noir)
+* ESP32 Tx <=> FTDI232 Rx (orange)
+* ESP32 Rx <=> FTDI232 Tx (jaune)
+
+Si le module n'est pas alimenté de façon autonome le cavalier doit être positionné coté 3.3V (voir la flèche),
+si le module dispose de sa propre alimentation il faut retirer le cavalier :
+
+* ESP32 Vcc <=> FTDI232 Vcc (rouge)
+
+Pour activer le mode téléversement il faut : appuyer sur le bouton 'PROG', appuyer et relâcher le bouton 'RST', 
+relâcher le bouton 'PROG'
+
+![ftdi](/Images/ftdi.png)
+
+Pour automatiser le transfert, j'ai développé un petit module sur lequel on peut souder le module FTDI 232. 
+Les connexions sont alors à réaliser sur le circuit secondaire et il faut ajouter :
+
+* ESP32 IO0 <=> FTDI232 IO0 (vert)
+* ESP32 RST <=> FTDI232 RST (marron)
+
+![module-ftdi](/Images/module-ftdi.png)
+
+Le connecteur JST permet d'alimenter l'ESP32, il faut alors retirer le cavalier d'alimentation.
+
+
+
 
 
 # La réalisation 
