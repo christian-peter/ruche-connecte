@@ -65,7 +65,9 @@ relâcher le bouton 'PROG'.
 
 ![ftdi](/Images/ftdi.png)
 
-Pour automatiser le transfert, j'ai développé un petit module sur lequel on peut souder le module FTDI 232. 
+Pour automatiser le transfert, j'ai développé un 
+[petit module](/usb-ftdi/README.md)
+sur lequel on peut souder le module FTDI 232. 
 Les connexions sont alors à réaliser sur le circuit secondaire et il faut ajouter :
 
 * ESP32 IO0 <=> FTDI232 IO0 (vert)
