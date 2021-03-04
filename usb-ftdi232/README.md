@@ -3,4 +3,4 @@ Les schémas et PCB sont déssinés avec [eagle](https://www.autodesk.com/produc
 
 * [schéma](/usb-ftdi232/USB-FTDI-ESP.sch)
 * [pcb](/usb-ftdi232/USB-FTDI-ESP.brd)
-* [gerber](/usb-ftdi232/gerber/USB-FTDI-ESP.zip)
+* [gerber](/usb-ftdi232/gerber/USB-FTDI-ESP32.zip)
