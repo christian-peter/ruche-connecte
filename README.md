@@ -66,7 +66,7 @@ relâcher le bouton 'PROG'.
 ![ftdi](/Images/ftdi.png)
 
 Pour automatiser le transfert, j'ai développé un 
-[petit module](/usb-ftdi/README.md)
+[petit module](/usb-ftdi232/README.md)
 sur lequel on peut souder le module FTDI 232. 
 Les connexions sont alors à réaliser sur le circuit secondaire et il faut ajouter :
 
