@@ -1,0 +1,11 @@
+Qty,Value,Device,Package,Parts,Description,MF,MPN,OC_FARNELL,OC_NEWARK,POPULARITY,SPICEMODEL,SPICEPREFIX
+2,,10-XX,B3F-10XX,"PROG, RST",OMRON SWITCH,,B3F-1000,176432,36M3542,72,,
+1,,PINHD-1X6,1X06,JP1,PIN HEADER,,,,,79,,
+2,100k,RR1206,R1206,"R1, R2","RESISTOR, European symbol",,,,,,NONE,R
+2,100n,C-EUC1206K,C1206K,"C2, C3","CAPACITOR, European symbol",,,,,13,,C
+2,10k,RR1206,R1206,"R3, R4","RESISTOR, European symbol",,,,,,NONE,R
+2,10u,C-EUC1206K,C1206K,"C1, C4","CAPACITOR, European symbol",,,,,13,,C
+2,2222,MMBT2222ALT1-NPN-SOT23-BEC,SOT23-BEC,"T1, T2",NPN Transistror,,,,,0,,
+1,B2B-PH-K-S,B2B-PH-K-S,B2B-PH-K-S,X2,"JST PH series header 2.00mm pitch disconnectable crimp style connectors, vertical (side entry type), 2 pins",,,,,,,
+1,MIC5239S,MIC5239S,SOT223,U2,LDO REGULATOR,,,,,,,
+1,USB-SERIAL-FT232R-3.3-5,USB-SERIAL-FT232R-3.3-5,USB-SERIAL-FT232R-3.3-5,U1,USB to Serial UART Converter based on FT232R chip,,,,,,,
