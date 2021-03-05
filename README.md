@@ -45,7 +45,7 @@ Le logiciel est développé sur l'interface arduino. L’installation et l'utili
 
 Il faut le configurer pour pouvoir utiliser l'ESP32 : voir 
 [ce site](http://electroniqueamateur.blogspot.com/2019/07/programmer-lesp32-avec-lide-arduino.html)
-ou [celui-ci](http://emery.claude.free.fr/esp32-idearduino.html)
+ou [celui-ci](http://emery.claude.free.fr/esp32-idearduino.html).
 
 Le téléversement nécessite un interface 
 [USB/FTDI232](https://www.google.com/search?q=ftdi232&tbm=isch&ved=2ahUKEwj_ld-KopTvAhUEgM4BHXQxAnQQ2-cCegQIABAA&oq=ftdi232&gs_lcp=CgNpbWcQAzIECCMQJzIECCMQJzICCAAyAggAMgQIABAeMgQIABAeMgQIABAeMgQIABAeMgQIABAeMgYIABAKEBhQ8tsCWPLbAmDG3QJoAHAAeACAAViIAViSAQExmAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=FZQ_YL-3KYSAur4P9OKIoAc&bih=596&biw=1417&client=ubuntu&hs=15p).
@@ -56,7 +56,7 @@ Les connexions minimales à établir sont :
 * ESP32 Tx <=> FTDI232 Rx (orange)
 * ESP32 Rx <=> FTDI232 Tx (jaune)
 
-Si le module n'est pas alimenté de façon autonome, il faut ajouter un fil d'alimentation (Vcc) et le cavalier doit être positionné coté 3.3V (voir la flèche), si le module dispose de sa propre alimentation il faut retirer le cavalier.
+Si le module n'est pas alimenté de façon autonome, il faut ajouter un fil d'alimentation (Vcc) et le cavalier jaune (voir la flèche) doit être positionné coté 3.3V, si le module dispose de sa propre alimentation il faut retirer le cavalier.
 
 * ESP32 Vcc <=> FTDI232 Vcc (rouge)
 
