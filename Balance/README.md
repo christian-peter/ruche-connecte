@@ -7,7 +7,7 @@ Pour la partie mécanique qui ne sera pas développée ici (mis à part quelques
 ![capteur 1](/Balance/Images/load_beam.png)
 
 Mon premier prototype avec un capteur n'était pas assez stable à mon gout. J'en ai donc réalisé 
-[d'autres](Balance/Images/proto_meca.png) avec 2 capteurs puis 4 capteurs. 
+[d'autres](/Balance/Images/proto_meca.png) avec 2 capteurs puis 4 capteurs. 
 
 J'ai aussi testé les capteurs de pèse personnes.
 
