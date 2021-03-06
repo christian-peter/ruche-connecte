@@ -60,7 +60,10 @@ Les paramètres sont regroupés par famille et sont les suivants :
     - intervalle de mesure pour visite,
     - nombre maximum de transmission,
 * réglages LoRa
-    - toto
+    - fréquence, 
+    - facteur d’étalement de spectre (7 à 12; 12 <=> portée maximale),
+    - bande passante,
+    - puissance d'émission (7 à 15 dB),
 * dérive des capteurs en température,
 * initialisation de la mémoire EEPROM ,
 
