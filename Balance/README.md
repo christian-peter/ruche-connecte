@@ -55,16 +55,15 @@ Un certain nombre de paramètres sont modifiables en se connectant au module en 
 Les paramètres sont regroupés par famille et sont les suivants :
 
 * réglages généraux
-  - interval de mesure le jour,
-  - interval de mesure la nuit,
-  - interval de mesure pour visite,
-  - nombre maximum de transmission,
-
+- intervalle de mesure le jour,
+- intervalle de mesure la nuit,
+- intervalle de mesure pour visite,
+- nombre maximum de transmission,
 * réglages LoRa
+- 
 
-* dérive des capteurs en température
-
-* initialisation de la mémoire EEPROM 
+* dérive des capteurs en température,
+* initialisation de la mémoire EEPROM ,
 
 
 
