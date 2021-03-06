@@ -55,11 +55,10 @@ Un certain nombre de paramètres sont modifiables en se connectant au module en 
 Les paramètres sont regroupés par famille et sont les suivants :
 
 * réglages généraux
-
-- interval de mesure le jour,
-- interval de mesure la nuit,
-- interval de mesure pour visite,
-- nombre maximum de transmission,
+  - interval de mesure le jour,
+  - interval de mesure la nuit,
+  - interval de mesure pour visite,
+  - nombre maximum de transmission,
 
 * réglages LoRa
 
