@@ -68,7 +68,7 @@ Les paramètres sont regroupés par famille et sont les suivants :
 * dérive des capteurs en température,
 * initialisation de la mémoire EEPROM (reset des paramètres de calibration et autres réglages).
 
-[exemple vidéo](/Balance/réglages.mp4)
+[exemple vidéo](/Balance/reglages.mp4)
 
 ## Electronique
 
