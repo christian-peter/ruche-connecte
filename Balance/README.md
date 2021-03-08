@@ -72,7 +72,7 @@ Les paramètres sont regroupés par famille et sont les suivants :
 
 ## Electronique
 
-![schema-scale](/Images/ESP_LoRa_Scale_V1.60.png)
+![schema-scale](/Balance/ESP_LoRa_Scale_V1.60.png)
 
 Les schémas et PCB sont dessinés avec [eagle](https://www.autodesk.com/products/eagle/overview?plc=F360&term=1-YEAR&support=ADVANCED&quantity=1) :
 
