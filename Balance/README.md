@@ -18,9 +18,9 @@ L'électronique est donc conçue pour s'adapter à ces différentes configuratio
 ## Fonctionnement
 
 Après mise sous tension, le module entre en mode sommeil pour réduire la consommation au maximum.
-Il se réveille à intervalles réguliers. Il mesure alors la masse et envoie les données (avec un code d'erreur CRC) via un réseau LoRa puis attend un accusé de réception. A réception de l'accusé de réception valide, le module repasse en mode sommeil ; si l'accusé de réception n'est pas valide, les données sont renvoyées (au maximum 'send_max_tries' fois). Sans accusé de réception au bout de 'WAIT_TIME_FOR_ACKNOWLEDGE' le module passe en mode sommeil.
+Il se réveille à intervalles réguliers. Il mesure alors la masse et envoie les données (avec un code d'erreur CRC) via un réseau LoRa puis attend un accusé de réception. A réception d'un accusé de réception valide, le module repasse en mode sommeil ; si l'accusé de réception n'est pas valide, les données sont renvoyées (au maximum 'send_max_tries' fois). Sans accusé de réception au bout de 'WAIT_TIME_FOR_ACKNOWLEDGE' le module passe en mode sommeil.
 
-La durée de sommeil est paramétrable et différenciée entre jour et nuit.
+La durée de sommeil est paramétrable et différenciée entre jour et nuit. La période 'jour' débute 1 heure avant le début du jour et s'achève 1 heure après la fin du jour.
 
 
 Le module peut aussi être réveillé manuellement par un appui bref sur la touche capacitive gauche ; un menu à dérouler avec la touche capacitive droite permet alors de sélectionner différentes actions ou d'afficher différentes informations :
@@ -45,7 +45,7 @@ Un appui maintenu sur la touche capacitive gauche permet d'accéder à la procé
 
 ### Calibration
 
-Avant la première utilisation, il faut calibrer la balance. Il suffit de suivre les indications affichées sur l'écran LCD.
+Avant la première utilisation, il faut calibrer la balance. Il faut suivre les indications affichées sur l'écran LCD.
 
 ### Réglages
 
@@ -59,14 +59,34 @@ Les paramètres sont regroupés par famille et sont les suivants :
     - intervalle de mesure la nuit,
     - intervalle de mesure pour visite,
     - nombre maximum de transmission,
-* réglages LoRa
+    - numéro de la balance,
+* réglages LoRa :
     - fréquence, 
-    - facteur d’étalement de spectre (7 à 12; 12 <=> portée maximale),
+    - facteur d’étalement de spectre (7 à 12; 12 <=> portée maximale, mais autonomie plus faible),
     - bande passante,
-    - puissance d'émission (7 à 15 dB),
+    - puissance d'émission (7 à 15 dB <=> portée maximale, mais autonomie plus faible),
 * dérive des capteurs en température,
-* initialisation de la mémoire EEPROM ,
+* initialisation de la mémoire EEPROM (reset des paramètres de calibration et autres réglages).
 
-
+[exemple vidéo](/Balance/réglages.mp4)
 
 ## Electronique
+
+![schema-scale](/Images/ESP_LoRa_Scale_V1.60.png)
+
+Les schémas et PCB sont dessinés avec [eagle](https://www.autodesk.com/products/eagle/overview?plc=F360&term=1-YEAR&support=ADVANCED&quantity=1) :
+
+* [schéma](/Balance/ESP_LoRa_Scale_V1.60.sch)
+* [pcb](/Balance/ESP_LoRa_Scale_V1.60.brd)
+* [gerber](/Balance/gerber/ESP_LoRa_Scale_V1.60.zip)
+* [liste du matériel](/Balance/ESP_LoRa_Scale_V1.60.csv)
+
+## Logiciel
+
+L'archive est à extraire dans le dossier 'projet' du l'IDE arduino.
+
+*[ESP_LoRa_Scale_V0.34.zip](/Balance/ESP_LoRa_Scale_V0.34.zip)
+
+Hormis la mesure de tension de la batterie la partie 'fuel gauge' reste à développer.
+
+
