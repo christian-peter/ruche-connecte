@@ -68,7 +68,13 @@ Les paramètres sont regroupés par famille et sont les suivants :
 * dérive des capteurs en température,
 * initialisation de la mémoire EEPROM (reset des paramètres de calibration et autres réglages).
 
-[exemple vidéo](/Balance/reglages.mp4)
+exemple vidéo : [mp4](http://rucher.polytech.unice.fr/ruche-connecte/videos/reglages.mp4) 
+[wmv](http://rucher.polytech.unice.fr/ruche-connecte/videos/reglages.wmv)
+<!-- 
+ffmpeg -i /tmp/reglages.mp4 -vf scale=960:-1  -an output2.mp4
+https://www.linuxtricks.fr/wiki/ffmpeg-la-boite-a-outils-multimedia
+https://tuxicoman.jesuislibre.net/2017/01/changer-la-resolution-dune-video-avec-ffmpeg-sous-linux.html
+-->
 
 ## Electronique
 
@@ -85,7 +91,7 @@ Les schémas et PCB sont dessinés avec [eagle](https://www.autodesk.com/product
 
 L'archive est à extraire dans le dossier 'projet' du l'IDE arduino.
 
-* [ESP_LoRa_Scale_V0.34.zip](/Balance/ESP_LoRa_Scale_V0.34.zip)
+*[ESP_LoRa_Scale_V0.34.zip](/Balance/ESP_LoRa_Scale_V0.34.zip)
 
 Hormis la mesure de tension de la batterie la partie 'fuel gauge' reste à développer.
 
