@@ -91,8 +91,13 @@ Les schémas et PCB sont dessinés avec [eagle](https://www.autodesk.com/product
 
 L'archive est à extraire dans le dossier 'projet' du l'IDE arduino.
 
-*[ESP_LoRa_Scale_V0.34.zip](/Balance/ESP_LoRa_Scale_V0.34.zip)
+* [ESP_LoRa_Scale_V0.34.zip](/Balance/ESP_LoRa_Scale_V0.34.zip)
 
 Hormis la mesure de tension de la batterie la partie 'fuel gauge' reste à développer.
+
+Sauf erreur et/ou oubli, les librairies utilisées sont : 
+
+* [DebugUtils](https://github.com/SensorsIot/DebugUtils/blob/master/DebugUtils/DebugUtils.h)
+*
 
 
