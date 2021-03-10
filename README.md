@@ -47,6 +47,11 @@ Il faut le configurer pour pouvoir utiliser l'ESP32 : voir
 [ce site](http://electroniqueamateur.blogspot.com/2019/07/programmer-lesp32-avec-lide-arduino.html)
 ou [celui-ci](http://emery.claude.free.fr/esp32-idearduino.html).
 
+Sauf erreur et/ou oubli, les librairies utilisées sont : 
+
+* [DebugUtils](https://github.com/SensorsIot/DebugUtils/blob/master/DebugUtils/DebugUtils.h)
+*
+
 Le téléversement nécessite un interface 
 [USB/FTDI232](https://www.google.com/search?q=ftdi232&tbm=isch&ved=2ahUKEwj_ld-KopTvAhUEgM4BHXQxAnQQ2-cCegQIABAA&oq=ftdi232&gs_lcp=CgNpbWcQAzIECCMQJzIECCMQJzICCAAyAggAMgQIABAeMgQIABAeMgQIABAeMgQIABAeMgQIABAeMgYIABAKEBhQ8tsCWPLbAmDG3QJoAHAAeACAAViIAViSAQExmAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=FZQ_YL-3KYSAur4P9OKIoAc&bih=596&biw=1417&client=ubuntu&hs=15p).
 
@@ -66,7 +71,7 @@ relâcher le bouton 'PROG'.
 ![ftdi](/Images/ftdi.png)
 
 Pour automatiser le transfert, j'ai développé un 
-[petit module](/usb-ftdi232/README.md)
+[petit module](/usb-ftdi/README.md)
 sur lequel on peut souder le module FTDI 232. 
 Les connexions sont alors à réaliser sur le circuit secondaire et il faut ajouter :
 
