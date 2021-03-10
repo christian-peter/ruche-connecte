@@ -50,7 +50,13 @@ ou [celui-ci](http://emery.claude.free.fr/esp32-idearduino.html).
 Sauf erreur et/ou oubli, les librairies utilisées sont : 
 
 * [DebugUtils](https://github.com/SensorsIot/DebugUtils/blob/master/DebugUtils/DebugUtils.h)
-*
+* [LoRa (Sandeep Mistry)](https://github.com/sandeepmistry/arduino-LoRa)
+* [esp8266-oled-ssd1306](https://github.com/ThingPulse/esp8266-oled-ssd1306)
+* [SparkFun NAU7802](https://github.com/sparkfun/SparkFun_Qwiic_Scale_NAU7802_Arduino_Library)
+* [OneWire](https://www.pjrc.com/teensy/td_libs_OneWire.html)
+* [CRC32](https://github.com/bakercp/CRC32)
+* [MAX17263-fuel-gauge](https://github.com/avandalen/Arduino-MAX17263-fuel-gauge-library)
+* [Streaming](https://github.com/janelia-arduino/Streaming)
 
 Le téléversement nécessite un interface 
 [USB/FTDI232](https://www.google.com/search?q=ftdi232&tbm=isch&ved=2ahUKEwj_ld-KopTvAhUEgM4BHXQxAnQQ2-cCegQIABAA&oq=ftdi232&gs_lcp=CgNpbWcQAzIECCMQJzIECCMQJzICCAAyAggAMgQIABAeMgQIABAeMgQIABAeMgQIABAeMgQIABAeMgYIABAKEBhQ8tsCWPLbAmDG3QJoAHAAeACAAViIAViSAQExmAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=FZQ_YL-3KYSAur4P9OKIoAc&bih=596&biw=1417&client=ubuntu&hs=15p).
