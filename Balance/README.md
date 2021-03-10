@@ -94,7 +94,7 @@ Pour une efficacité maximale de l'antenne, ce dernier doit être réalisé en F
 Il est aussi possible de connecter une antenne externe via un connecteur UFL, la piste reliée à l'antenne 'UCA'
 doit alors être coupée.  
 
-![pcb-scale](/Balance/pcb-scale.png)
+![pcb-scale](/Balance/Images/pcb-scale.png)
 
 Cette carte peut recevoir 1, 2 ou 4 capteurs de force. Le convertisseur NAU7802 U4 et les composants associés
 ne sont utiles que pour l'utilisation de 4 capteurs ; le pont SJ7 doit alors être court-circuité.
