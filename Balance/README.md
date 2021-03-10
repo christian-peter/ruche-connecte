@@ -87,6 +87,20 @@ Les schémas et PCB sont dessinés avec [eagle](https://www.autodesk.com/product
 * [gerber](/Balance/gerber/ESP_LoRa_Scale_V1.60.zip)
 * [liste du matériel](/Balance/ESP_LoRa_Scale_V1.60.csv)
 
+L'[antenne 'UCA'](http://users.polytech.unice.fr/~ferrero/recherche_UCAboards.html) 
+LoRa, déssinée par Fabien Ferrero, est supportée par le circuit imprimé. 
+Pour une efficacité maximale de l'antenne, ce dernier doit être réalisé en FR4 avec une épaisseur de 0,8mm.
+
+Il est aussi possible de connecter une antenne externe via un connecteur UFL, la piste reliée à l'antenne 'UCA'
+doit alors être coupée.  
+
+![pcb-scale](/Balance/pcb-scale.png)
+
+Cette carte peut recevoir 1, 2 ou 4 capteurs de force. Le convertisseur NAU7802 U4 et les composants associés
+ne sont utiles que pour l'utilisation de 4 capteurs ; le pont SJ7 doit alors être court-circuité.
+Avec 1 ou 2 capteurs on laisse SJ7 ouvert pour réduire la consommation et on utilise les entrées du convertisseur U2.
+Un capteur unique doit être connecté sur les entrées 'A', les entrées 'B' étant reliées à la masse.
+
 ## Logiciel
 
 L'archive est à extraire dans le dossier 'projet' du l'IDE arduino.
@@ -95,9 +109,6 @@ L'archive est à extraire dans le dossier 'projet' du l'IDE arduino.
 
 Hormis la mesure de tension de la batterie la partie 'fuel gauge' reste à développer.
 
-Sauf erreur et/ou oubli, les librairies utilisées sont : 
 
-* [DebugUtils](https://github.com/SensorsIot/DebugUtils/blob/master/DebugUtils/DebugUtils.h)
-*
 
 
