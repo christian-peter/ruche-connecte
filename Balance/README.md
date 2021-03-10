@@ -101,6 +101,9 @@ ne sont utiles que pour l'utilisation de 4 capteurs ; le pont SJ7 doit alors êt
 Avec 1 ou 2 capteurs on laisse SJ7 ouvert pour réduire la consommation et on utilise les entrées du convertisseur U2.
 Un capteur unique doit être connecté sur les entrées 'A', les entrées 'B' étant reliées à la masse.
 
+Le connecteur 'JP3' permet de connecter un capteur de température dans le but de compenser les dérives thermiques des capteurs de force. Pour l'instant seul est supporté le capteur de type 18B20. On pourrait aussi utiliser des capteurs de la famille DHT11,
+mais la partie software devra être modifiée en conséquence.
+
 ## Logiciel
 
 L'archive est à extraire dans le dossier 'projet' du l'IDE arduino.
@@ -108,6 +111,12 @@ L'archive est à extraire dans le dossier 'projet' du l'IDE arduino.
 * [ESP_LoRa_Scale_V0.34.zip](/Balance/ESP_LoRa_Scale_V0.34.zip)
 
 Hormis la mesure de tension de la batterie la partie 'fuel gauge' reste à développer.
+
+## Mesures
+
+à venir
+
+## Prototypes
 
 
 
