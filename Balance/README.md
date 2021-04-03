@@ -9,7 +9,7 @@ Pour la partie mécanique qui ne sera pas développée ici (mis à part quelques
 Mon premier prototype avec un capteur n'était pas assez stable à mon gout. J'en ai donc réalisé 
 [d'autres](/Balance/Images/proto_meca.png) avec 2 capteurs puis 4 capteurs. 
 
-J'ai aussi testé les capteurs de pèse personnes.
+J'ai aussi testé les capteurs utilisés pour les pèse-personnes.
 
 ![capteur 2](/Balance/Images/pese_personne.png)
 
@@ -60,6 +60,7 @@ Les paramètres sont regroupés par famille et sont les suivants :
     - intervalle de mesure pour visite,
     - nombre maximum de transmission,
     - numéro de la balance,
+    - variation de masse générant une alerte,
 * réglages LoRa :
     - fréquence, 
     - facteur d’étalement de spectre (7 à 12; 12 <=> portée maximale, mais autonomie plus faible),
