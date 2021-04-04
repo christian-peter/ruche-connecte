@@ -107,11 +107,11 @@ permettant d'obtenir aussi une mesure d'hygrométrie mais la partie software dev
 
 ## Logiciel
 
-L'archive est à extraire dans le dossier 'projet' du l'IDE arduino.
+L'archive est à extraire dans le dossier 'projet' de l'IDE arduino.
 
 * [ESP_LoRa_Scale_V0.34.zip](/Balance/ESP_LoRa_ScaleV0.34.zip)
 
-Hormis la mesure de tension de la batterie la partie 'fuel gauge' reste à développer.
+Hormis la mesure de tension de la batterie, la partie 'fuel gauge' reste à développer.
 
 ## Mesures
 
