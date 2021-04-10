@@ -47,7 +47,7 @@ Un appui maintenu sur la touche capacitive gauche permet d'accéder à la procé
 
 ### Calibration
 
-Avant la première utilisation, il faut calibrer la balance. Il faut suivre les indications affichées sur l'écran LCD.
+Avant la première utilisation, il faut calibrer la balanceen suivant les indications affichées sur l'écran LCD.
 
 ### Réglages
 
