@@ -27,10 +27,10 @@ Le module peut aussi être réveillé manuellement par un appui bref sur la touc
 
 * création d'une visite (dans la base de données),
 * mise en sommeil,
-* nourrissement 50/50,
-* nourrissement 70/30,
-* nourrissement candy,
-* modification matérielle,
+* nourrissement 50/50 (1),
+* nourrissement 70/30 (1),
+* nourrissement candy (1),
+* modification matérielle (1),
 * mesure de la masse,
 * informations batterie,
 * informations version et numéro de balance,
@@ -38,6 +38,8 @@ Le module peut aussi être réveillé manuellement par un appui bref sur la touc
 * informations température capteurs.
 
 Une fois le choix validé par la touche capacitive gauche, les données sont envoyées ou les informations affichées et le module retourne au mode sommeil.
+
+(1) L'information ainsi que la variation de masse correspondante est stockée dans la base de données.
 
 ## Calibration et réglages
 
