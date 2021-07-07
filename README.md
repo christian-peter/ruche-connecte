@@ -1,3 +1,6 @@
+# !!! EN COURS DE REDACTION !!! 
+donc incomplet et en évolution à un rythme aléatoire
+
 # Outil de suivi de ruchers
 Ce projet est en cours de développement. Tous les éléments décrits dans le synoptique ne sont donc pas fonctionnels à ce jour.
 
