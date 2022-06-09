@@ -6,3 +6,5 @@ Les schémas et PCB sont dessinés avec [eagle](https://www.autodesk.com/product
 * [pcb](/usb-ftdi232/USB-FTDI-ESP.brd)
 * [gerber](/usb-ftdi232/gerber/USB-FTDI-ESP32.zip)
 * [liste du matériel](/usb-ftdi232/USB-FTDI-ESP.csv)
+
+![image-ftdi](/usb-ftdi232/USB-FTDI-ESP.jpg)
